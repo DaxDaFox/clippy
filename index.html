@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 Video Player</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        
+        .video-container {
+            border: 3px solid white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+        
+        video {
+            display: block;
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .error-message {
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video controls>
+            <source src="https://raw.githubusercontent.com/DaxDaFox/clippy/main/0001-3168.mp4" type="video/mp4">
+            <div class="error-message">Your browser does not support the video tag.</div>
+        </video>
+    </div>
+</body>
+</html>
